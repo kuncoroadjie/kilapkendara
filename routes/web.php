@@ -16,6 +16,6 @@ Route::post('/booking/payment/submit', [FrontController::class, 'booking_payment
 Route::get('/booking/{carStore:slug}', [FrontController::class, 'booking'])->name('front.booking');
 Route::post('/booking/{carStore:slug}/{carService:slug}', [FrontController::class, 'booking_store'])->name('front.booking_store');
 
-Route::get('/booking/{carStore:slug}/{carService:slug}/payment', [FrontController::class, 'booking_payment'])->name('front.booking_payment');
+Route::get('/booking/{carStore}/{carService}/payment', [FrontController::class, 'booking_payment'])->name('front.booking_payment');
 
 Route::get('/booking/success/{bookingTransaction}', [FrontController::class, 'success_booking'])->name('front.success_booking');
