@@ -91,8 +91,8 @@ class BookingTransactionResource extends Resource
                     ->boolean()
                     ->trueColor('success')
                     ->falseColor('danger')
-                    ->trueIcon('heroicons-o-check-circle')
-                    ->falseIcon('heroicons-o-x-circle')
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
                     ->label('Sudah Bayar'),
                 ])
             ->filters([
